@@ -5,12 +5,4 @@ node_modules/
 *.swp
 .DS_Store
 
-.env# Ignoruj katalog node_modules
-node_modules/
-
-*.log
-*.log.*
-*.swp
-.DS_Store
-
 .env

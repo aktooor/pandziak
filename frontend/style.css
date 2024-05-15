@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0;
+}
+
+.header {
+    font-weight: 500;
+    font-size: larger;
+    background-color: whitesmoke;
+    padding: 30px;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    left: 50px;
+    max-width: 100px;
+    top: 15px
+}
+
+.regbtn {
+    position: absolute;
+    right: 130px;
+    top: 29px;
+}
+
+.loginbtn {
+    position: absolute;
+    right: 1px;
+    top: 29px;
+}
+
+.logoutbtn {
+    position: absolute;
+    right: 1px;
+    top: 29px;
+}
+
+nav ul a {
+    margin-right: 50px;
+    transition: 0.5s;
+}
+
+nav ul a:hover {
+    color: rgb(87, 87, 87);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    padding: 100px 100px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    width: calc(25% - 20px); /* Szerokość każdego kafelka, aby zmieściły się po 4 w rzędzie */
+    float: left;
+    box-sizing: border-box; /* Dodaje padding i border do szerokości */
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+.product img {
+    max-width: 100%; /* Zdjęcie nie będzie większe niż kafelka */
+    height: auto; /* Zapobiega zniekształceniu proporcji zdjęcia */
+}
+
+@media (max-width: 1200px) {
+    .product {
+        width: calc(33.33% - 20px); /* Szerokość każdego kafelka, aby zmieściły się po 3 w rzędzie na mniejszych ekranach */
+    }
+}
+
+
+h1 {
+    position: absolute;
+    right: 880px
+}
+
+.border {
+    position: absolute;
+    right: 800px;
+    top: 200px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    border-radius: 2%;
+}
+
+.email {
+    position: absolute;
+    top: 100px;
+    right: 110px;
+}
+
+.pass {
+    position: absolute;
+    top: 250px;
+    right: 110px;
+}
+
+.haveacc {
+    position: absolute;
+    top: 350px;
+    left: 50px
+}
+
+.loginbtn2 {
+    position: absolute;
+    top: 350px;
+    left: 180px;
+    font-weight: 500;
+}
+
+.regborder {
+    position: absolute;
+    top: 300px;
+    right: 119px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px;
+    height: 25px;
+    width: 150px;
+}
+
+.shoeborder {
+    position: absolute;
+    left: 550px;
+    top: 200px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    border-radius: 2%;
+}
+
+.p1 {
+    position: absolute;
+    top: 200px;
+    left: 1050px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.price {
+    position: absolute;
+    top: 250px;
+    left: 1050px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.colors {
+    position: absolute;
+    top: 300px;
+    left: 1050px;
+}
+
+.colors img {
+    max-width: 70px;
+    border: 0px solid black;
+    border-radius: 8px;
+}
+
+.colors2 {
+    position: absolute;
+    top: 300px;
+    left: 1130px;
+}
+
+.colors2 img {
+    max-width: 70px;
+    border: 0px solid black;
+    border-radius: 8px;
+}
+
+.colors img:hover {
+    max-width: 70px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.colors2 img:hover {
+    max-width: 70px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.rozmiar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 500px;
+    position: absolute;
+    top: 400px;
+    left: 1040px;
+}
+
+.rozmiar {
+    flex: 20 0 calc(30% - 20px);
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.rozmiar:hover {
+    background-color: #f0f0f0;
+}
+
+.selected {
+    border: 1px solid #000;
+    border-radius: 4%;
+}
+
+.cartaddbtn {
+    font-weight: 500;
+    position: absolute;
+    width: 300px;
+    top: 600px;
+    left: 1140px;
+    height: 50px;
+    border-style: solid;
+    background-color: black;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.cartaddbtn:hover {
+    background-color: rgb(67, 67, 67);
+    border-color: rgb(67, 67, 67);
+}
+
+.cartaddbtn a {
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -300px;
+    background-color: #f9f9f9;
+    width: 1000px;
+    height: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header li {
+    display: inline-block;
+}
+
+.categorya1 {
+    position: absolute;
+    left: 100px;
+    height: 100px;
+}
+
+.bootsname {
+    position: absolute;
+    left: 100px;
+    top: 60px;
+    text-align: left;
+    font-size: smaller;
+}
+
+.bootsname a {
+    color: rgb(87, 87, 87);
+    transition: 0s;
+}
+
+.bootsname a:hover {
+    color: black
+}
+
+.opis {
+    max-width: 450px;
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    text-align: left;
+    font-weight: 500;
+    font-size: large;
+}
+
+.kolorydostepne {
+    position: absolute;
+    top: 350px;
+}
+
+.lic1 {
+    position: absolute;
+    top: 400px
+}
+
+.lic2 {
+    position: absolute;
+    top: 435px
+}
+
+.heartaddbtn {
+    font-weight: 500;
+    position: absolute;
+    width: 300px;
+    top: 675px;
+    left: 1140px;
+    height: 50px;
+    border-style: solid;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: rgb(180, 180, 180);
+}
+
+.heartaddbtn:hover {
+    border-color: black;
+}
+
+.heartaddbtn a {
+    color: black;
+}
+
+.bestsellers {
+    font-weight: 450;
+    position: absolute;
+    left: 20px;
+    top: 1000px;
+    font-size: x-large;
+}
+
+.slider {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: absolute;
+    top: 1050px;
+    height: 500px;
+}
+
+.slider img {
+    display: inline-block;
+    margin: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3%;
+    border-color: #d8d8d8;
+}
+
+.slide {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.slide p {
+    margin-left: 20px;
+    position: absolute;
+    top: 430px
+}
+
+h5 {
+    position: absolute;
+    top: 450px;
+    margin-left: 20px;
+    font-size: medium;
+}
+
+.bests {
+    position: absolute;
+    top: 225px;
+    left: 1050px;
+    font-size: smaller;
+    font-weight: 600;
+    color: rgb(153, 2, 2);
+}
+
+.priceu {
+    position: absolute;
+    top: 250px;
+    left: 1160px;
+    font-size: larger;
+    font-weight: 600;
+    color: lightgray;
+    text-decoration: line-through;
+}
